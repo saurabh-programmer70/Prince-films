@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINCE FILMS</title>
+    <link rel="icon" href="all images/LOGO.JPG" sizes="32*32" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="aap.js">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <h1>Prince Films</h1>
+        </div>
+
+        <div class="nav-left">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.2.HTML">Gallery</a></li>
+                <li class="Category"><a href="#html">Wedding <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li>Haldi Photoshoot</li>
+                        <li>Mehandi Photoshoot</li>
+                        <li>Bridal Photoshoot</li>
+                        <li>Candid Photoshoot</li>
+                        <li>Destination Wedding</li>
+                        <li>wedding Photography in Gaya</li>
+                    </ul>
+                </li>
+                <li><a href="index.4.HTML">Vlog</a></li>
+                <li><a href="index.3.HTML">Contact Us</a></li>
+            </ul>
+
+             <!-- ✅ FIXED BUTTON -->
+        <button class="buy-now" onclick="openForm()">Buy Now</button>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+          
+        </div>
+    </nav>
+</header>
+<style>
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    width: 320px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.popup-content button {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+</style>
+
+<!-- POPUP FORM -->
+<div id="bookingPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeForm()">×</span>
+        <h2>Book Photography</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="tel" placeholder="Phone Number">
+        <input type="date">
+        <input type="text" placeholder="Event Type">
+
+        <button onclick="sendWhatsApp()">Book Now</button>
+    </div>
+</div>
+
+
+     <!-------------Gallrey------------------------------>
+<hr>
+<section class="gallery-section">
+    <h3 class="gallery-title">GALLERY</h3>
+    <h1 class="gallery-subtitle">showcases</h1>
+
+    <div class="gallery-container">
+
+        <div class="image-card"><img src="LOGO.JPG" alt=""></div>
+        <div class="image-card"><img src="p02.jpg" alt=""></div>
+        <div class="image-card"><img src="p01.jpg" alt=""></div>
+        <div class="image-card"><img src="p04.jpg" alt=""></div>
+        <div class="image-card"><img src="p03.jpg" alt=""></div>
+        <div class="image-card"><img src="p05.jpg" alt=""></div>
+        <div class="image-card"><img src="p07.jpg" alt=""></div>
+        <div class="image-card"><img src="p01.jpg" alt=""></div>
+        <div class="image-card"><img src="p09.jpg" alt=""></div>
+        <div class="image-card"><img src="p10.jpg" alt=""></div>
+    
+        <div class="image-card"><img src="p13.jpg" alt=""></div>
+        <div class="image-card"><img src="p14.jpg" alt=""></div>
+        <div class="image-card"><img src="p22.jpg" alt=""></div>
+        <div class="image-card"><img src="p16.jpg" alt=""></div>
+        <div class="image-card"><img src="p17.jpg" alt=""></div>
+        <div class="image-card"><img src="p18.jpg" alt=""></div>
+        <div class="image-card"><img src="p012.jpg" alt=""></div>
+        <div class="image-card"><img src="p19.jpg" alt=""></div>
+    
+        <div class="image-card"><img src="p21.jpg" alt=""></div>
+        <div class="image-card"><img src="p22.jpg" alt=""></div>
+        <div class="image-card"><img src="IMG_2482.JPG.jpg" alt=""></div>
+        <div class="image-card"><img src="IMG_2484.JPG.jpg" alt=""></div>
+        <div class="image-card"><img src="IMG_2485.JPG.jpg" alt=""></div>
+        <div class="image-card"><img src="IMG_2483.JPG.jpg" alt=""></div>
+
+    </div>
+</section>
+<hr>
+<!-------------------footer------------------>
+<hr>
+<section class="footer">
+  <div class="footer-links">
+
+    <div class="footer-brand">
+      <h3>Prince Films</h3>
+        <p>Capturing memories that last forever.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <ul>
+        <li><h2>Quick Links</h2></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.2.HTML">Gallery</a></li>
+        <li><a href="index.3.HTML">Contact Us</a></li>
+        <li><a href="index.4.HTML">Vlog</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-column">
+      <ul>
+        <li><span class="footer-label">Address:</span> Biri, Sobh, Barachatti, Gaya,(Bihar) PIN CODE - 824201</li>
+        <li><span class="footer-label">Email:</span><a href="mailto:princegupta700@gamil.com">  pg7050070410@gamil.com</a></li>
+        <li><span class="footer-label">Call Us:</span><a href="tel:+917050070410">  + 91 7050070410</a></li>
+        <li><span class="footer-label">Opening Time:</span> 10am to 5pm</li>
+        <li><span class="footer-label">Social Media:</span>
+            <a href="https://www.facebook.com/share/1BM299UZFW/?mibextid=wwXIfc"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/wedding._planet?igsh=cGVwcnhwbmhrc2hl"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/917050070410"target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Trending Services -->
+    <div class="footer-column">
+      <ul>
+        <li><h2>Trending Services</h2></li>
+        <li>Pre Wedding Shoot</li>
+        <li>Creative Mind Shoot</li>
+        <li>Wedding Shoot</li>
+        <li>Wedding Photography</li>
+      </ul>
+    </div>
+  </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Wedding Planet. All Rights Reserved.</p>
+  </div>
+</section>
+
+<script>
+// MENU
+const menuIcon = document.getElementById('menu-icon');
+const navMenu = document.querySelector('.nav-menu');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuIcon.classList.toggle('fa-bars');
+    menuIcon.classList.toggle('fa-xmark');
+});
+
+// POPUP
+function openForm() {
+    document.getElementById("bookingPopup").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("bookingPopup").style.display = "none";
+}
+
+// WHATSAPP
+function sendWhatsApp() {
+    let inputs = document.querySelectorAll('#bookingPopup input');
+
+    let name = inputs[0].value;
+    let phone = inputs[1].value;
+    let date = inputs[2].value;
+    let event = inputs[3].value;
+
+    let message = `Name: ${name}%0APhone: ${phone}%0ADate: ${date}%0AEvent: ${event}`;
+
+    window.open(`https://wa.me/917050070410?text=${message}`, '_blank');
+
+}
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
